@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jasa Nikah Siri Terdekat | NikahIslam.id</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+        background-color: #f8fdf8;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #004d26 !important;
+      }
+      .navbar-brand,
+      .nav-link {
+        color: #fff !important;
+      }
+      .nav-link.active {
+        color: #ffe66d !important;
+        font-weight: 600;
+      }
+
+      /* Hero */
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+          url("assets/img/beranda/beranda1.png") center center/cover no-repeat;
+        height: 100vh;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+      }
+      .hero p {
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 1.05rem;
+      }
+      .btn-primary {
+        background-color: #157347;
+        border: none;
+      }
+      .btn-primary:hover {
+        background-color: #0e5936;
+      }
+
+      /* Section umum */
+      section {
+        padding: 70px 0;
+      }
+      h2.section-title {
+        font-weight: 700;
+        color: #004d26;
+      }
+
+      /* Why Us */
+      .why-card {
+        background: #fff;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-left: 5px solid #157347;
+        padding: 20px;
+        transition: transform 0.2s ease;
+      }
+      .why-card:hover {
+        transform: translateY(-5px);
+      }
+
+      /* Gallery */
+      .gallery-img {
+        border-radius: 10px;
+        object-fit: cover;
+        width: 100%;
+        height: 250px;
+        transition: all 0.3s ease;
+      }
+      .gallery-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Wilayah */
+      .city-box {
+        background: #e9f7ee;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+      /* FAQ */
+      .accordion-button {
+        background-color: #f8fdf8;
+        color: #333;
+      }
+      .accordion-button:focus {
+        box-shadow: none;
+      }
+
+      footer {
+        background: #004d26;
+        color: #fff;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">NikahIslam.id</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon bg-light rounded-1"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link active">Tentang</a>
+            </li>
+            <li class="nav-item">
+              <a href="layanan.html" class="nav-link active">Syarat</a>
+            </li>
+            <li class="nav-item">
+              <a href="prosedur.html" class="nav-link active">Prosedur</a>
+            </li>
+            <li class="nav-item">
+              <a href="kontak.html" class="nav-link active">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="beranda" class="hero">
+      <div data-aos="fade-up">
+        <h1>Jasa Nikah Sah Secara Agama Islam (Siri)</h1>
+        <p class="mt-3 mb-4">
+          Layanan konsultasi dan pendampingan akad nikah sesuai syariat Islam.
+          Kami membantu Anda memahami prosedur, syarat, lokasi, serta biaya
+          nikah siri secara jelas, aman, dan profesional.
+        </p>
+        <a href="https://wa.me/6288980776674" class="btn btn-primary btn-lg">
+          <i class="fab fa-whatsapp me-2"></i> Konsultasi Sekarang
+        </a>
+      </div>
+    </section>
+
+    <!-- Kenapa Memilih Kami -->
+    <section id="kenapa">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title text-center mb-4">
+          Mengapa Memilih Jasa Nikah Siri Kami?
+        </h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>
+                <i class="fa fa-shield-alt text-success me-2"></i>Privasi Aman
+              </h5>
+              <p>
+                Kami menjamin kerahasiaan data setiap pasangan dengan penuh
+                tanggung jawab dan kepercayaan.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>
+                <i class="fa fa-user-tie text-success me-2"></i>Ustadz
+                Profesional
+              </h5>
+              <p>
+                Pendampingan dilakukan oleh ustadz dan penghulu berpengalaman
+                sesuai tuntunan syariat Islam.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="why-card">
+              <h5>
+                <i class="fa fa-map-marker-alt text-success me-2"></i>Lokasi
+                Fleksibel
+              </h5>
+              <p>
+                Akad nikah dapat dilakukan di rumah, tempat pilihan Anda, atau
+                lokasi khusus yang kami sediakan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Gallery Foto -->
+    <section id="gallery" class="bg-light">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="section-title mb-4">Gallery Foto</h2>
+
+        <div class="row g-4">
+          <!-- Loop Foto 1 - 12 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery1.jpg"
+              alt="Gallery Foto 1"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery2.jpg"
+              alt="Gallery Foto 2"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery3.jpg"
+              alt="Gallery Foto 3"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery4.jpg"
+              alt="Gallery Foto 4"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery5.jpg"
+              alt="Gallery Foto 5"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery6.jpg"
+              alt="Gallery Foto 6"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery7.jpg"
+              alt="Gallery Foto 7"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery8.jpg"
+              alt="Gallery Foto 8"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery9.jpg"
+              alt="Gallery Foto 9"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery10.jpg"
+              alt="Gallery Foto 10"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery11.jpg"
+              alt="Gallery Foto 11"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <img
+              src="assets/img/gallery/gallery12.jpg"
+              alt="Gallery Foto 12"
+              class="gallery-img img-fluid rounded shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tambahkan CSS internal (bisa di atas footer) -->
+    <style>
+      .gallery-img {
+        transition: all 0.3s ease;
+        border-radius: 10px;
+      }
+      .gallery-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+
+    <!-- Testimoni -->
+    <section id="testimoni">
+      <div class="container text-center" data-aos="fade-up">
+        <h2 class="section-title mb-4">Testimoni Klien Kami</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <p>
+                "Alhamdulillah, prosesi akad berjalan lancar dan sesuai syariat
+                Islam."
+              </p>
+              <small>— Ahmad & Siti</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <p>
+                "Pelayanan sangat profesional, privasi kami benar-benar terjaga
+                dengan baik."
+              </p>
+              <small>— Rina & Dedi</small>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm border-0 p-4">
+              <p>
+                "Terima kasih atas pendampingannya, kini hubungan kami resmi dan
+                halal."
+              </p>
+              <small>— Putri & Fajar</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ✅ Wilayah Layanan -->
+<section id="wilayah" class="bg-light py-5">
+  <div class="container text-center" data-aos="fade-up">
+    <h2 class="section-title mb-4" style="color: #004d26">
+      Wilayah Layanan Kami
+    </h2>
+    <p class="text-muted mb-5">
+      Kami melayani akad nikah sah secara agama di seluruh wilayah Indonesia
+      dan beberapa negara tetangga.
+    </p>
+
+    <div class="row g-3 justify-content-center">
+
+      <!-- 🟩 JAWA BARAT -->
+      <h5 class="fw-bold text-success text-start mt-4 mb-2">Jawa Barat</h5>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=bandung" class="city-box text-decoration-none d-block">Bandung</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=bekasi" class="city-box text-decoration-none d-block">Bekasi</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=bogor" class="city-box text-decoration-none d-block">Bogor</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=cirebon" class="city-box text-decoration-none d-block">Cirebon</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=depok" class="city-box text-decoration-none d-block">Depok</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=sukabumi" class="city-box text-decoration-none d-block">Sukabumi</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=karawang" class="city-box text-decoration-none d-block">Karawang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=indramayu" class="city-box text-decoration-none d-block">Indramayu</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=tasikmalaya" class="city-box text-decoration-none d-block">Tasikmalaya</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=garut" class="city-box text-decoration-none d-block">Garut</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=cianjur" class="city-box text-decoration-none d-block">Cianjur</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=subang" class="city-box text-decoration-none d-block">Subang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=purwakarta" class="city-box text-decoration-none d-block">Purwakarta</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=sumedang" class="city-box text-decoration-none d-block">Sumedang</a></div>
+
+      <!-- 🟩 JAWA TENGAH -->
+      <h5 class="fw-bold text-success text-start mt-4 mb-2">Jawa Tengah</h5>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=semarang" class="city-box text-decoration-none d-block">Semarang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=solo" class="city-box text-decoration-none d-block">Solo</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=magelang" class="city-box text-decoration-none d-block">Magelang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=purwokerto" class="city-box text-decoration-none d-block">Purwokerto</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=pekalongan" class="city-box text-decoration-none d-block">Pekalongan</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=tegal" class="city-box text-decoration-none d-block">Tegal</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=banyumas" class="city-box text-decoration-none d-block">Banyumas</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=kudus" class="city-box text-decoration-none d-block">Kudus</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=pati" class="city-box text-decoration-none d-block">Pati</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=jepara" class="city-box text-decoration-none d-block">Jepara</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=salatiga" class="city-box text-decoration-none d-block">Salatiga</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=kendal" class="city-box text-decoration-none d-block">Kendal</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=purworejo" class="city-box text-decoration-none d-block">Purworejo</a></div>
+
+      <!-- 🟩 JAWA TIMUR -->
+      <h5 class="fw-bold text-success text-start mt-4 mb-2">Jawa Timur</h5>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=surabaya" class="city-box text-decoration-none d-block">Surabaya</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=malang" class="city-box text-decoration-none d-block">Malang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=kediri" class="city-box text-decoration-none d-block">Kediri</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=blitar" class="city-box text-decoration-none d-block">Blitar</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=pasuruan" class="city-box text-decoration-none d-block">Pasuruan</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=jember" class="city-box text-decoration-none d-block">Jember</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=mojokerto" class="city-box text-decoration-none d-block">Mojokerto</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=sidoarjo" class="city-box text-decoration-none d-block">Sidoarjo</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=banyuwangi" class="city-box text-decoration-none d-block">Banyuwangi</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=bojonegoro" class="city-box text-decoration-none d-block">Bojonegoro</a></div>
+
+      <!-- 🟩 LUAR JAWA -->
+      <h5 class="fw-bold text-success text-start mt-4 mb-2">Luar Jawa</h5>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=makassar" class="city-box text-decoration-none d-block">Makassar</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=palembang" class="city-box text-decoration-none d-block">Palembang</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=lampung" class="city-box text-decoration-none d-block">Lampung</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=denpasar" class="city-box text-decoration-none d-block">Denpasar</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=bali" class="city-box text-decoration-none d-block">Bali</a></div>
+
+      <!-- 🟩 LUAR NEGERI -->
+      <h5 class="fw-bold text-success text-start mt-4 mb-2">Luar Negeri</h5>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=malaysia" class="city-box text-decoration-none d-block">Malaysia</a></div>
+      <div class="col-md-2 col-6"><a href="wilayah.html?nama=singapore" class="city-box text-decoration-none d-block">Singapore</a></div>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- Style tambahan -->
+    <style>
+      #wilayah .city-box {
+        background: #e9f7ee;
+        border-radius: 10px;
+        padding: 15px 0;
+        font-weight: 500;
+        color: #004d26;
+        border: 1px solid #b6e0c2;
+        transition: all 0.3s ease;
+      }
+      #wilayah .city-box:hover {
+        background: #157347;
+        color: #fff;
+        transform: translateY(-5px);
+      }
+    </style>
+
+    <!-- Tambahkan gaya opsional -->
+    <style>
+      .city-box {
+        background: #e9f7ee;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        font-weight: 500;
+        color: #004d26;
+        transition: all 0.3s ease;
+      }
+      .city-box:hover {
+        background: #157347;
+        color: #fff;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+
+    <!-- 💰 Biaya / Bisyāroh -->
+    <section id="biaya" class="py-5 bg-light">
+      <div class="container" data-aos="fade-up">
+        <div class="text-center mb-5">
+          <h2 class="section-title fw-bold mb-3" style="color: #004d26">
+            Berapa Bisyāroh yang Harus Dibayarkan?
+          </h2>
+          <p class="text-muted">
+            Besaran bayaran atau tarif penghulu nikah siri bergantung pada
+            daerah masing-masing. Untuk setiap wilayah, biaya disesuaikan dengan
+            jarak, layanan, dan kebutuhan akad.
+          </p>
+        </div>
+
+        <!-- Kartu Bisyāroh -->
+        <div
+          class="card border-0 shadow-sm p-4 text-center mx-auto"
+          style="max-width: 800px"
+        >
+          <p class="lead">
+            Daerah tertentu kami menetapkan kisaran
+            <strong>Harga Rp. xxx.xx</strong>,
+            <a
+              href="https://wa.me/6288980776674?text=Assalamu%27alaikum%2C%20saya%20ingin%20mengetahui%20biaya%20nikah%20siri%20berdasarkan%20wilayah%20saya"
+              target="_blank"
+              class="fw-bold text-success"
+              style="text-decoration: none"
+            >
+              Click Untuk Membuka
+            </a>
+          </p>
+
+          <p class="small text-muted mb-0">
+            Bisyāroh tersebut sudah mencakup jasa penghulu nikah, dua orang
+            saksi, tempat akad, serta surat sertifikat nikah yang sah secara
+            agama Islam. Bila penghulu diundang ke lokasi Anda, umumnya akan
+            dikenakan tambahan biaya transportasi ringan.
+          </p>
+
+          <!-- Tombol WhatsApp -->
+          <a
+            href="https://wa.me/6288980776674?text=Assalamu%27alaikum%2C%20saya%20ingin%20mengetahui%20biaya%20nikah%20siri%20berdasarkan%20wilayah%20saya"
+            target="_blank"
+            class="btn btn-success mt-4 px-4"
+          >
+            <i class="fab fa-whatsapp me-2"></i> Hubungi Admin via WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tambahan CSS -->
+    <style>
+      #biaya .card {
+        border-radius: 15px;
+        background: #ffffff;
+      }
+      #biaya a {
+        text-decoration: none;
+      }
+      #biaya a:hover {
+        text-decoration: underline;
+      }
+      #biaya .btn-success {
+        background-color: #157347;
+        border: none;
+      }
+      #biaya .btn-success:hover {
+        background-color: #0e5936;
+      }
+    </style>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-light">
+      <div class="container" data-aos="fade-up">
+        <h2 class="section-title text-center mb-4">
+          Pertanyaan yang Sering Diajukan
+        </h2>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Q1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                Apa itu Nikah Siri?
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Nikah siri adalah pernikahan yang sah secara agama Islam, namun
+                belum tercatat secara hukum negara di KUA.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Nikah Siri Beda Agama, Apakah Bisa?
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Dalam Islam, pernikahan beda agama dianggap tidak sah karena
+                bertentangan dengan ajaran syariat. Mayoritas ulama dan fatwa
+                resmi menegaskan bahwa seorang Muslim tidak boleh menikah dengan
+                non-Muslim, kecuali jika pasangan tersebut terlebih dahulu masuk
+                Islam (mualaf).
+              </div>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Apakah Bisa Tanpa Wali Ayah Kandung?
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Bisa, dalam kondisi tertentu (darurat) pernikahan dapat
+                dilaksanakan dengan wali tahkim, yaitu wali pengganti yang
+                ditunjuk sesuai ketentuan syariat Islam.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                Jangka Waktu Nikah Siri Dalam Islam?
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Nikah siri yang sah menurut Islam bersifat permanen (seumur
+                hidup), bukan sementara seperti yang sering disalahartikan.
+                Tidak ada batas waktu dalam pernikahan yang dilakukan sesuai
+                syariat Islam.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                Wanita yang Masih Bersuami, Apakah Bisa Nikah Siri?
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Tidak bisa. Islam melarang keras wanita yang masih memiliki
+                ikatan pernikahan dengan suami sahnya untuk menikah kembali
+                sebelum resmi bercerai. Hal ini termasuk dalam kategori
+                perbuatan zina.
+              </div>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                Apa Itu Surat Nikah Siri?
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Surat Nikah Siri adalah dokumen yang ditandatangani oleh
+                penghulu, wali, saksi, dan kedua mempelai sebagai bukti tertulis
+                bahwa akad nikah telah dilakukan secara sah menurut syariat
+                Islam. Namun, surat ini bukan dokumen resmi negara dan tidak
+                memiliki kekuatan hukum seperti buku nikah dari KUA.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+      <p class="mb-1">&copy; 2025 NikahIslam.id</p>
+      <small
+        >Layanan nikah siri sah secara agama dengan bimbingan ustadz
+        terpercaya.</small
+      >
+    </footer>
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+  </body>
+</html>

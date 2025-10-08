@@ -1,0 +1,13 @@
+[
+    {
+      "nama": "Paket Dasar",
+      "harga": "Rp 2.000.000",
+      "fitur": ["Ustadz penghulu", "Saksi & wali", "Surat nikah agama"]
+    },
+    {
+      "nama": "Paket Premium",
+      "harga": "Rp 3.500.000",
+      "fitur": ["Ustadz pilihan", "Dokumentasi foto", "Lokasi privat"]
+    }
+  ]
+  
