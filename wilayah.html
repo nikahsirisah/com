@@ -130,47 +130,53 @@
   <!-- ✅ Konten Dinamis -->
   <div class="container content-section">
     <style>
-/* Judul bagian di tengah dengan simbol */
+<style>
+/* Bubble untuk semua h3 */
 .content-section h3 {
   text-align: center;
   position: relative;
   font-weight: 600;
-  margin-bottom: 20px;
-  color: #004d26;
+  margin: 40px 0 20px 0;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  font-size: 1.3rem;
 }
 
+/* Bubble berbeda tiap judul */
+#judul-1 { background: #25D366; } /* Hijau cerah */
+#judul-2 { background: #1E90FF; } /* Biru */
+#judul-3 { background: #FF8C00; } /* Oranye */
+#judul-4 { background: #FF1493; } /* Pink */
+#judul-5 { background: #8A2BE2; } /* Ungu */
+#judul-6 { background: #FF4500; } /* Merah */
+
+/* Simbol sebelum dan sesudah judul */
 .content-section h3::before {
-  content: "✦ "; /* simbol sebelum judul */
-  color: #25D366;
+  content: "✦ ";
   font-size: 1.2rem;
 }
 
 .content-section h3::after {
-  content: " ✦"; /* simbol setelah judul */
-  color: #25D366;
+  content: " ✦";
   font-size: 1.2rem;
 }
 
-/* List dengan simbol khusus */
+/* List dengan simbol cantik */
 .content-section ul li {
-  list-style: "✔️"; /* simbol check mark di depan tiap li */
+  list-style: "✔️"; /* bisa diganti 🔹 • atau emoji lain */
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 1.05rem;
 }
 </style>
 
-<h3>1. Apa Itu Nikah Siri?</h3>
+<h3 id="judul-1">1. Apa Itu Nikah Siri?</h3>
 <p>
   <strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
   Meskipun belum tercatat oleh negara, nikah siri tetap <strong>sah menurut syariat Islam</strong> selama memenuhi seluruh <em>rukun</em> dan <em>syarat nikah</em>.
 </p>
-
-<p>
-  Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
-  Berikut rukun dan syarat agar akad nikah sah menurut agama:
-</p>
-
 <ul>
   <li><strong>Kedua mempelai</strong> beragama Islam dan tidak memiliki halangan menikah.</li>
   <li>Adanya <strong>wali nikah</strong> — baik wali nasab maupun <em>wali tahkim</em> (jika wali asli tidak ada).</li>
@@ -178,6 +184,22 @@
   <li>Adanya <strong>mas kawin (mahar)</strong> dari mempelai pria.</li>
   <li>Terucapnya <strong>ijab dan qabul</strong> dengan lafaz jelas dan dipahami kedua belah pihak.</li>
 </ul>
+
+<h3 id="judul-2">2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
+<!-- Konten tetap seperti semula -->
+
+<h3 id="judul-3">3. Lokasi Akad Nikah di <span id="nama-kota"></span></h3>
+<!-- Konten tetap seperti semula -->
+
+<h3 id="judul-4">4. Biaya Nikah Siri di <span id="nama-kota4"></span></h3>
+<!-- Konten tetap seperti semula -->
+
+<h3 id="judul-5">5. Sertifikat Nikah Siri</h3>
+<!-- Konten tetap seperti semula -->
+
+<h3 id="judul-6">6. Kelebihan Nikah Siri di <span id="nama-kota5"></span></h3>
+<!-- Konten tetap seperti semula -->
+
 <p>
 <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
 <p>
@@ -322,6 +344,7 @@
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
