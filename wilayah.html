@@ -133,101 +133,56 @@
 <style>
 <style>
 <style>
-/* Container opsional untuk mengatur jarak */
-.content-section {
-  text-align: center; /* Semua konten judul di tengah */
-  margin: 20px 0;
-}
-
-/* Bubble animasi gradient untuk judul */
+<style>
+/* Judul bagian di tengah dengan simbol */
 .content-section h3 {
-  display: inline-block;
+  text-align: center;
+  position: relative;
   font-weight: 600;
-  margin: 40px 0 20px;
-  padding: 12px 35px;
-  border-radius: 50px;
-  color: white;
-  font-size: 1.3rem;
-  cursor: default;
-  background: linear-gradient(45deg, #25D366, #1E90FF, #FF8C00, #FF1493, #8A2BE2, #FF4500);
-  background-size: 600% 600%;
-  animation: gradientPulse 8s ease infinite, bubblePulse 2s ease-in-out infinite;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center; /* memastikan teks di tengah bubble */
+  margin-bottom: 20px;
+  color: #004d26;
 }
 
-/* Simbol sebelum dan sesudah judul */
 .content-section h3::before {
-  content: "✦ ";
+  content: "✦ "; /* simbol sebelum judul */
+  color: #25D366;
   font-size: 1.2rem;
 }
+
 .content-section h3::after {
-  content: " ✦";
+  content: " ✦"; /* simbol setelah judul */
+  color: #25D366;
   font-size: 1.2rem;
 }
 
-/* Hover effect */
-.content-section h3:hover {
-  transform: scale(1.08) rotate(-2deg);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
-
-/* List stylish */
+/* List dengan simbol khusus */
 .content-section ul li {
-  list-style: "✔️";
+  list-style: "✔️"; /* simbol check mark di depan tiap li */
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 1.05rem;
 }
-
-/* Animasi gradient berjalan */
-@keyframes gradientPulse {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Efek denyut bubble */
-@keyframes bubblePulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-}
-
-/* Bounce saat muncul di viewport */
-@keyframes bounceIn {
-  0% { transform: translateY(-50px); opacity: 0; }
-  60% { transform: translateY(10px); opacity: 1; }
-  80% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
-}
-.bounce {
-  animation: bounceIn 1s ease forwards;
-}
 </style>
 
-<script>
-// IntersectionObserver untuk efek bounce saat judul muncul
-const h3s = document.querySelectorAll('.content-section h3');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('bounce');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.5 });
+<h3>1. Apa Itu Nikah Siri?</h3>
+<p>
+  <strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
+  Meskipun belum tercatat oleh negara, nikah siri tetap <strong>sah menurut syariat Islam</strong> selama memenuhi seluruh <em>rukun</em> dan <em>syarat nikah</em>.
+</p>
 
-h3s.forEach(h3 => observer.observe(h3));
-</script>
+<p>
+  Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
+  Berikut rukun dan syarat agar akad nikah sah menurut agama:
+</p>
 
-<div class="content-section">
-  <h3>1. Apa Itu Nikah Siri?</h3>
-  <h3>2. Cara Mendaftar Nikah Siri di Kota Anda</h3>
-  <h3>3. Lokasi Akad Nikah di Kota Anda</h3>
-  <h3>4. Biaya Nikah Siri di Kota Anda</h3>
-  <h3>5. Sertifikat Nikah Siri</h3>
-  <h3>6. Kelebihan Nikah Siri di Kota Anda</h3>
-</div>
+<ul>
+  <li><strong>Kedua mempelai</strong> beragama Islam dan tidak memiliki halangan menikah.</li>
+  <li>Adanya <strong>wali nikah</strong> — baik wali nasab maupun <em>wali tahkim</em> (jika wali asli tidak ada).</li>
+  <li>Hadirnya <strong>dua saksi laki-laki Muslim</strong> yang adil dan baligh.</li>
+  <li>Adanya <strong>mas kawin (mahar)</strong> dari mempelai pria.</li>
+  <li>Terucapnya <strong>ijab dan qabul</strong> dengan lafaz jelas dan dipahami kedua belah pihak.</li>
+</ul>
+
 
 <p>
 <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
@@ -373,6 +328,7 @@ h3s.forEach(h3 => observer.observe(h3));
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
