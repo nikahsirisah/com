@@ -136,65 +136,56 @@
 <style>
 <style>
 <style>
+<style>
 /* Judul bagian di tengah dengan simbol */
 .content-section h3 {
-  text-align: center; /* pastikan ke tengah */
+  text-align: center;
   position: relative;
   font-weight: 600;
   margin-bottom: 20px;
   color: #004d26;
-  font-size: 1.4rem; /* sedikit lebih besar agar menonjol */
 }
 
-/* Simbol sebelum judul */
 .content-section h3::before {
-  content: "✦ "; 
+  content: "✦ "; /* simbol sebelum judul */
   color: #25D366;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
-/* Simbol setelah judul */
 .content-section h3::after {
-  content: " ✦"; 
+  content: " ✦"; /* simbol setelah judul */
   color: #25D366;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 /* List dengan simbol khusus */
 .content-section ul li {
-  list-style: "✔️ "; /* simbol check mark di depan tiap li */
+  list-style: "✔️"; /* simbol check mark di depan tiap li */
   margin-bottom: 10px;
   line-height: 1.6;
   font-size: 1.05rem;
 }
-
-/* Optional: spacing paragraf */
-.content-section p {
-  margin-bottom: 15px;
-  line-height: 1.7;
-}
 </style>
 
-<div class="content-section">
-  <h3>1. Apa Itu Nikah Siri?</h3>
-  <p>
-    <strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
-    Meskipun belum tercatat oleh negara, nikah siri tetap <strong>sah menurut syariat Islam</strong> selama memenuhi seluruh <em>rukun</em> dan <em>syarat nikah</em>.
-  </p>
+<h3>1. Apa Itu Nikah Siri?</h3>
+<p>
+  <strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
+  Meskipun belum tercatat oleh negara, nikah siri tetap <strong>sah menurut syariat Islam</strong> selama memenuhi seluruh <em>rukun</em> dan <em>syarat nikah</em>.
+</p>
 
-  <p>
-    Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
-    Berikut rukun dan syarat agar akad nikah sah menurut agama:
-  </p>
+<p>
+  Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
+  Berikut rukun dan syarat agar akad nikah sah menurut agama:
+</p>
 
-  <ul>
-    <li><strong>Kedua mempelai</strong> beragama Islam dan tidak memiliki halangan menikah.</li>
-    <li>Adanya <strong>wali nikah</strong> — baik wali nasab maupun <em>wali tahkim</em> (jika wali asli tidak ada).</li>
-    <li>Hadirnya <strong>dua saksi laki-laki Muslim</strong> yang adil dan baligh.</li>
-    <li>Adanya <strong>mas kawin (mahar)</strong> dari mempelai pria.</li>
-    <li>Terucapnya <strong>ijab dan qabul</strong> dengan lafaz jelas dan dipahami kedua belah pihak.</li>
-  </ul>
-</div>
+<ul>
+  <li><strong>Kedua mempelai</strong> beragama Islam dan tidak memiliki halangan menikah.</li>
+  <li>Adanya <strong>wali nikah</strong> — baik wali nasab maupun <em>wali tahkim</em> (jika wali asli tidak ada).</li>
+  <li>Hadirnya <strong>dua saksi laki-laki Muslim</strong> yang adil dan baligh.</li>
+  <li>Adanya <strong>mas kawin (mahar)</strong> dari mempelai pria.</li>
+  <li>Terucapnya <strong>ijab dan qabul</strong> dengan lafaz jelas dan dipahami kedua belah pihak.</li>
+</ul>
+
 <p>
 <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
 <p>
@@ -339,6 +330,7 @@
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
