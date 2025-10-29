@@ -132,11 +132,16 @@
     <style>
 <style>
 <style>
-/* Bubble animasi gradient */
+<style>
+/* Container opsional untuk mengatur jarak */
+.content-section {
+  text-align: center; /* Semua konten judul di tengah */
+  margin: 20px 0;
+}
+
+/* Bubble animasi gradient untuk judul */
 .content-section h3 {
-  text-align: center;
   display: inline-block;
-  position: relative;
   font-weight: 600;
   margin: 40px 0 20px;
   padding: 12px 35px;
@@ -148,6 +153,7 @@
   background-size: 600% 600%;
   animation: gradientPulse 8s ease infinite, bubblePulse 2s ease-in-out infinite;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* memastikan teks di tengah bubble */
 }
 
 /* Simbol sebelum dan sesudah judul */
@@ -214,12 +220,14 @@ const observer = new IntersectionObserver(entries => {
 h3s.forEach(h3 => observer.observe(h3));
 </script>
 
-<h3>1. Apa Itu Nikah Siri?</h3>
-<h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
-<h3>3. Lokasi Akad Nikah di <span id="nama-kota"></span></h3>
-<h3>4. Biaya Nikah Siri di <span id="nama-kota4"></span></h3>
-<h3>5. Sertifikat Nikah Siri</h3>
-<h3>6. Kelebihan Nikah Siri di <span id="nama-kota5"></span></h3>
+<div class="content-section">
+  <h3>1. Apa Itu Nikah Siri?</h3>
+  <h3>2. Cara Mendaftar Nikah Siri di Kota Anda</h3>
+  <h3>3. Lokasi Akad Nikah di Kota Anda</h3>
+  <h3>4. Biaya Nikah Siri di Kota Anda</h3>
+  <h3>5. Sertifikat Nikah Siri</h3>
+  <h3>6. Kelebihan Nikah Siri di Kota Anda</h3>
+</div>
 
 <p>
 <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
@@ -365,6 +373,7 @@ h3s.forEach(h3 => observer.observe(h3));
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
