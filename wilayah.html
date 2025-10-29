@@ -122,7 +122,7 @@
   <!-- ✅ Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1 id="judul">Jasa Nikah Siri Terlengkap di ...</h1>
+      <h1 id="judul">Jasa Nikah Siri Terlengkap di <span id="nama-kota"></span></h1>
       <p>Hubungi kami di <b>0889-8077-6674</b> untuk layanan akad nikah sah secara agama.</p>
     </div>
   </section>
@@ -216,9 +216,9 @@
   Hubungi kami sekarang melalui 
   <a href="https://wa.me/6288980776674" target="_blank" class="whatsapp-link">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:24px; vertical-align:middle; margin-right:5px;">
-    💬 WhatsApp 0889-8077-6674
+    WhatsApp 0889-8077-6674
   </a> 
-  untuk mendapatkan <strong>penawaran biaya nikah siri terbaik di <span id="nama-kota4"></span></strong> sesuai kebutuhan Anda.
+  untuk mendapatkan penawaran biaya nikah siri terbaik di <span id="nama-kota4"></span> sesuai kebutuhan Anda.
 </p>
 
 <!-- CSS untuk efek berkedip -->
@@ -277,6 +277,7 @@
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
