@@ -519,7 +519,16 @@ faders.forEach(fader => appearOnScroll.observe(fader));
   <a href="index.html#wilayah" class="btn btn-outline-success btn-lg ms-2">← Kembali</a>
 </div>
 
-<footer class="text-center mt-5">
+<style>
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+</style>
+
+<footer class="mt-5">
   <p class="mb-0">© 2025 nikahsirrisah.com — Layanan Nikah Sah Secara Agama</p>
 </footer>
 
@@ -533,4 +542,5 @@ faders.forEach(fader => appearOnScroll.observe(fader));
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
