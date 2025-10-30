@@ -147,30 +147,37 @@
 <title>Nikah Siri: Pengertian, Cara Daftar, Lokasi, dan Biaya</title>
 
 <style>
+/* -------------------------------------
+   TAMPILAN DASAR & BACKGROUND ISLAMI
+--------------------------------------*/
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.8;
   color: #333;
-  margin: 20px;
-  background: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f7f4;
+  background-image: radial-gradient(circle at 1px 1px, #cde9e0 1px, transparent 0);
+  background-size: 40px 40px;
   overflow-x: hidden;
 }
 
 .content-section {
   max-width: 900px;
-  margin: 0 auto;
-  background: #fff;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  backdrop-filter: blur(5px);
 }
 
-/* ------------------------------
-   ANIMASI HALUS (fade-in saat scroll)
---------------------------------*/
+/* -------------------------------------
+   ANIMASI FADE-IN SAAT SCROLL
+--------------------------------------*/
 .fade {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
   transition: all 0.8s ease-out;
 }
 .fade.visible {
@@ -178,15 +185,38 @@ body {
   transform: translateY(0);
 }
 
-/* Judul bagian di tengah dengan simbol */
+/* -------------------------------------
+   HEADING & JUDUL
+--------------------------------------*/
+h1, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #004d26;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: relative;
+}
+h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: #25D366;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
 .content-section h3 {
   text-align: center;
   position: relative;
   font-weight: 700;
-  margin: 40px 0 25px;
+  margin: 50px 0 25px;
   color: #004d26;
   font-size: 1.6rem;
-  letter-spacing: 0.5px;
   text-transform: capitalize;
 }
 
@@ -204,14 +234,15 @@ body {
   content: " ✦";
 }
 
-/* Paragraf */
+/* -------------------------------------
+   PARAGRAF & LIST
+--------------------------------------*/
 .content-section p {
   font-size: 1.05rem;
   margin-bottom: 15px;
   text-align: justify;
 }
 
-/* List dengan simbol khusus */
 .content-section ul {
   padding-left: 25px;
 }
@@ -223,7 +254,9 @@ body {
   font-size: 1.05rem;
 }
 
-/* Tautan WhatsApp */
+/* -------------------------------------
+   TAUTAN WHATSAPP
+--------------------------------------*/
 .whatsapp-link {
   color: #25D366;
   font-weight: 600;
@@ -237,18 +270,19 @@ body {
   border-color: #128C7E;
 }
 
-/* SEO tambahan */
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
-}
-
-/* Responsive */
+/* -------------------------------------
+   RESPONSIVE
+--------------------------------------*/
 @media (max-width: 768px) {
   .content-section {
-    padding: 20px;
+    padding: 25px;
+    margin: 20px;
   }
   .content-section h3 {
     font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 1.6rem;
   }
 }
 </style>
@@ -257,7 +291,7 @@ h1, h2, h3 {
 <body>
 <section class="content-section">
 
-  <h1 style="text-align:center; color:#004d26;" class="fade">Panduan Lengkap Nikah Siri di Indonesia</h1>
+  <h1 class="fade">Panduan Lengkap Nikah Siri di Indonesia</h1>
 
   <h3 class="fade">1. Apa Itu Nikah Siri?</h3>
   <p class="fade"><strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
@@ -291,7 +325,7 @@ h1, h2, h3 {
   Dengan persyaratan lengkap, proses nikah siri dapat berlangsung <strong>cepat, aman, dan sah secara agama</strong>.</p>
 
   <h3 class="fade">3. Lokasi Akad Nikah di <span id="nama-kota3"></span></h3>
-  <p class="fade">Kami melayani akad nikah langsung di tempat yang biasa kami sediakan untuk kenyamanan dan privasi maksimal.  
+  <p class="fade">Kami melayani akad nikah langsung di tempat yang kami sediakan untuk kenyamanan dan privasi maksimal.  
   Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah <span id="nama-kota3"></span> dan sekitarnya.</p>
 
   <p class="fade">Keunggulan layanan kami:</p>
@@ -317,17 +351,18 @@ h1, h2, h3 {
   <p class="fade">Kami memberikan estimasi biaya jelas antara <strong>Rp2.000.000 – Rp3.000.000</strong>.  
   Dengan layanan kami, nikah siri bukan hanya sah secara agama, tetapi juga hemat, praktis, dan aman.</p>
 
-  <p class="fade">Hubungi kami sekarang melalui 
-  <a href="https://wa.me/6288980776674" target="_blank" class="whatsapp-link">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:22px; vertical-align:middle; margin-right:5px;">
-    WhatsApp 0889-8077-6674
-  </a> 
-  untuk mendapatkan penawaran biaya nikah siri terbaik di <span id="nama-kota4"></span>.
+  <p class="fade" style="text-align:center;">
+    Hubungi kami sekarang melalui <br>
+    <a href="https://wa.me/6288980776674" target="_blank" class="whatsapp-link">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:24px; vertical-align:middle; margin-right:5px;">
+      WhatsApp 0889-8077-6674
+    </a> 
+    <br>untuk mendapatkan penawaran biaya nikah siri terbaik di <span id="nama-kota4"></span>.
   </p>
 
 </section>
 
-<!-- JavaScript kecil untuk memicu animasi saat elemen terlihat -->
+<!-- Animasi Scroll -->
 <script>
 const faders = document.querySelectorAll('.fade');
 const appearOptions = { threshold: 0.1 };
@@ -338,11 +373,9 @@ const appearOnScroll = new IntersectionObserver(function(entries, observer) {
     observer.unobserve(entry.target);
   });
 }, appearOptions);
-
 faders.forEach(fader => appearOnScroll.observe(fader));
 </script>
 
-</section>
 </body>
 </html>
 
@@ -423,6 +456,7 @@ faders.forEach(fader => appearOnScroll.observe(fader));
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
