@@ -148,7 +148,7 @@
 
 <style>
 /* -------------------------------------
-   TAMPILAN DASAR & BACKGROUND ISLAMI
+   BACKGROUND & DASAR
 --------------------------------------*/
 body {
   font-family: 'Poppins', sans-serif;
@@ -162,6 +162,39 @@ body {
   overflow-x: hidden;
 }
 
+/* -------------------------------------
+   HEADER
+--------------------------------------*/
+.header {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.header img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* -------------------------------------
+   KONTEN UTAMA
+--------------------------------------*/
 .content-section {
   max-width: 900px;
   margin: 50px auto;
@@ -173,7 +206,7 @@ body {
 }
 
 /* -------------------------------------
-   ANIMASI FADE-IN SAAT SCROLL
+   ANIMASI SCROLL
 --------------------------------------*/
 .fade {
   opacity: 0;
@@ -186,7 +219,7 @@ body {
 }
 
 /* -------------------------------------
-   HEADING & JUDUL
+   JUDUL DAN SUBJUDUL
 --------------------------------------*/
 h1, h3 {
   font-family: 'Poppins', sans-serif;
@@ -235,7 +268,7 @@ h1::after {
 }
 
 /* -------------------------------------
-   PARAGRAF & LIST
+   PARAGRAF & DAFTAR
 --------------------------------------*/
 .content-section p {
   font-size: 1.05rem;
@@ -255,7 +288,7 @@ h1::after {
 }
 
 /* -------------------------------------
-   TAUTAN WHATSAPP
+   LINK WHATSAPP
 --------------------------------------*/
 .whatsapp-link {
   color: #25D366;
@@ -271,24 +304,64 @@ h1::after {
 }
 
 /* -------------------------------------
+   FLOATING WHATSAPP BUTTON
+--------------------------------------*/
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 99;
+}
+
+.floating-whatsapp:hover {
+  background-color: #128C7E;
+  transform: scale(1.05);
+}
+
+.floating-whatsapp img {
+  width: 35px;
+  height: 35px;
+}
+
+/* -------------------------------------
    RESPONSIVE
 --------------------------------------*/
 @media (max-width: 768px) {
+  .header h2 { font-size: 1.2rem; }
   .content-section {
     padding: 25px;
     margin: 20px;
   }
-  .content-section h3 {
-    font-size: 1.4rem;
-  }
   h1 {
     font-size: 1.6rem;
+  }
+  .content-section h3 {
+    font-size: 1.4rem;
   }
 }
 </style>
 </head>
 
 <body>
+
+<!-- HEADER -->
+<header class="header">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Mosque_icon_green.svg" alt="Logo Nikah Siri">
+  <h2>Layanan Nikah Siri Islami</h2>
+</header>
+
+<!-- KONTEN -->
 <section class="content-section">
 
   <h1 class="fade">Panduan Lengkap Nikah Siri di Indonesia</h1>
@@ -362,7 +435,12 @@ h1::after {
 
 </section>
 
-<!-- Animasi Scroll -->
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/6288980776674" class="floating-whatsapp" target="_blank" aria-label="Chat via WhatsApp">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
+</a>
+
+<!-- ANIMASI SCROLL -->
 <script>
 const faders = document.querySelectorAll('.fade');
 const appearOptions = { threshold: 0.1 };
@@ -378,7 +456,6 @@ faders.forEach(fader => appearOnScroll.observe(fader));
 
 </body>
 </html>
-
 
 <!-- CSS untuk efek berkedip -->
 <style>
@@ -456,6 +533,7 @@ faders.forEach(fader => appearOnScroll.observe(fader));
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
