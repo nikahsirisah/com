@@ -153,6 +153,7 @@ body {
   color: #333;
   margin: 20px;
   background: #f9f9f9;
+  overflow-x: hidden;
 }
 
 .content-section {
@@ -162,6 +163,19 @@ body {
   padding: 30px 40px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* ------------------------------
+   ANIMASI HALUS (fade-in saat scroll)
+--------------------------------*/
+.fade {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Judul bagian di tengah dengan simbol */
@@ -228,6 +242,7 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .content-section {
     padding: 20px;
@@ -242,16 +257,16 @@ h1, h2, h3 {
 <body>
 <section class="content-section">
 
-  <h1 style="text-align:center; color:#004d26;">Panduan Lengkap Nikah Siri di Indonesia</h1>
+  <h1 style="text-align:center; color:#004d26;" class="fade">Panduan Lengkap Nikah Siri di Indonesia</h1>
 
-  <h3>1. Apa Itu Nikah Siri?</h3>
-  <p><strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
+  <h3 class="fade">1. Apa Itu Nikah Siri?</h3>
+  <p class="fade"><strong>Nikah siri</strong> adalah pernikahan yang dilakukan <strong>secara agama Islam</strong> tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>.  
   Meskipun belum tercatat oleh negara, nikah siri tetap <strong>sah menurut syariat Islam</strong> selama memenuhi seluruh <em>rukun</em> dan <em>syarat nikah</em>.</p>
 
-  <p>Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
+  <p class="fade">Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh <strong>dua saksi laki-laki Muslim</strong> yang telah <strong>baligh</strong> dan berakal sehat.  
   Berikut rukun dan syarat agar akad nikah sah menurut agama:</p>
 
-  <ul>
+  <ul class="fade">
     <li><strong>Kedua mempelai</strong> beragama Islam dan tidak memiliki halangan menikah.</li>
     <li>Adanya <strong>wali nikah</strong> — baik wali nasab maupun <em>wali tahkim</em>.</li>
     <li>Hadirnya <strong>dua saksi laki-laki Muslim</strong> yang adil dan baligh.</li>
@@ -259,10 +274,10 @@ h1, h2, h3 {
     <li>Terucapnya <strong>ijab dan qabul</strong> dengan lafaz jelas dan dipahami kedua belah pihak.</li>
   </ul>
 
-  <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
-  <p>Pendaftaran <strong>nikah siri</strong> melalui layanan kami sangat mudah. Anda cukup mengirimkan dokumen melalui WhatsApp di <strong>0889-8077-6674</strong>:</p>
+  <h3 class="fade">2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
+  <p class="fade">Pendaftaran <strong>nikah siri</strong> melalui layanan kami sangat mudah. Anda cukup mengirimkan dokumen melalui WhatsApp di <strong>0889-8077-6674</strong>:</p>
 
-  <ul>
+  <ul class="fade">
     <li>KTP atau SIM masing-masing calon mempelai</li>
     <li>Nama ayah masing-masing calon mempelai</li>
     <li>Jika calon mempelai wanita <strong>gadis</strong>, wajib membawa <strong>wali nasab</strong></li>
@@ -272,43 +287,60 @@ h1, h2, h3 {
     <li>Materai Rp10.000 sebanyak <strong>4 buah</strong></li>
   </ul>
 
-  <p>Setelah dokumen lengkap, <strong>penghulu</strong> kami akan menjadwalkan tanggal dan waktu akad sesuai permintaan.  
+  <p class="fade">Setelah dokumen lengkap, <strong>penghulu</strong> kami akan menjadwalkan tanggal dan waktu akad sesuai permintaan.  
   Dengan persyaratan lengkap, proses nikah siri dapat berlangsung <strong>cepat, aman, dan sah secara agama</strong>.</p>
 
-  <h3>3. Lokasi Akad Nikah di <span id="nama-kota3"></span></h3>
-  <p>Kami melayani akad nikah langsung di tempat yang biasa kami sediakan untuk kenyamanan dan privasi maksimal.  
+  <h3 class="fade">3. Lokasi Akad Nikah di <span id="nama-kota3"></span></h3>
+  <p class="fade">Kami melayani akad nikah langsung di tempat yang biasa kami sediakan untuk kenyamanan dan privasi maksimal.  
   Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah <span id="nama-kota3"></span> dan sekitarnya.</p>
 
-  <p>Keunggulan layanan kami:</p>
-  <ul>
+  <p class="fade">Keunggulan layanan kami:</p>
+  <ul class="fade">
     <li>Praktis dan nyaman: Kami siap datang ke lokasi pilihan Anda.</li>
     <li>Privasi terjaga: Akad nikah dapat dilakukan secara tertutup sesuai keinginan pasangan.</li>
     <li>Fleksibilitas penuh: Lokasi bisa disesuaikan dengan jumlah tamu dan kebutuhan pasangan.</li>
     <li>Sah secara agama: Semua proses mengikuti syariat Islam dengan pengawasan penghulu resmi.</li>
   </ul>
 
-  <p>Dengan layanan Nikah Siri <span id="nama-kota3"></span> dan sekitarnya, nikah siri bukan hanya sah secara agama, tapi juga lebih nyaman, cepat, dan aman, tanpa harus terikat aturan birokrasi KUA.</p>
+  <p class="fade">Dengan layanan Nikah Siri <span id="nama-kota3"></span> dan sekitarnya, nikah siri bukan hanya sah secara agama, tapi juga lebih nyaman, cepat, dan aman, tanpa harus terikat aturan birokrasi KUA.</p>
 
-  <h3>4. Biaya Nikah Siri di <span id="nama-kota4"></span></h3>
-  <p>Biaya nikah siri bervariasi tergantung lokasi akad, jumlah saksi, dan fasilitas tambahan yang dipilih.  
+  <h3 class="fade">4. Biaya Nikah Siri di <span id="nama-kota4"></span></h3>
+  <p class="fade">Biaya nikah siri bervariasi tergantung lokasi akad, jumlah saksi, dan fasilitas tambahan yang dipilih.  
   Di <span id="nama-kota4"></span>, kami memastikan harga transparan, terjangkau, dan sesuai syariat Islam.</p>
 
-  <p>Faktor yang memengaruhi biaya antara lain:</p>
-  <ul>
+  <p class="fade">Faktor yang memengaruhi biaya antara lain:</p>
+  <ul class="fade">
     <li>Lokasi akad: Rumah mempelai, hotel, atau masjid dapat memengaruhi biaya.</li>
     <li>Fasilitas tambahan: Misalnya untuk mualaf dan penerbitan surat mualaf.</li>
   </ul>
 
-  <p>Kami memberikan estimasi biaya jelas antara <strong>Rp2.000.000 – Rp3.000.000</strong>.  
+  <p class="fade">Kami memberikan estimasi biaya jelas antara <strong>Rp2.000.000 – Rp3.000.000</strong>.  
   Dengan layanan kami, nikah siri bukan hanya sah secara agama, tetapi juga hemat, praktis, dan aman.</p>
 
-  <p>Hubungi kami sekarang melalui 
+  <p class="fade">Hubungi kami sekarang melalui 
   <a href="https://wa.me/6288980776674" target="_blank" class="whatsapp-link">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width:22px; vertical-align:middle; margin-right:5px;">
     WhatsApp 0889-8077-6674
   </a> 
   untuk mendapatkan penawaran biaya nikah siri terbaik di <span id="nama-kota4"></span>.
   </p>
+
+</section>
+
+<!-- JavaScript kecil untuk memicu animasi saat elemen terlihat -->
+<script>
+const faders = document.querySelectorAll('.fade');
+const appearOptions = { threshold: 0.1 };
+const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.add('visible');
+    observer.unobserve(entry.target);
+  });
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));
+</script>
 
 </section>
 </body>
@@ -391,6 +423,7 @@ h1, h2, h3 {
   document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
   document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
 </script>
+
 
 
 
