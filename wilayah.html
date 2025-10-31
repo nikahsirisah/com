@@ -12,7 +12,6 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Custom Style -->
   <style>
     :root {
       --hijau: #004d26;
@@ -23,11 +22,10 @@
       font-family: 'Poppins', sans-serif;
       background: #f4f9f6;
       color: #333;
-      line-height: 1.8;
       overflow-x: hidden;
+      text-align: center;
     }
 
-    /* NAVBAR */
     header {
       background: linear-gradient(135deg, var(--hijau), #00713e);
       color: #fff;
@@ -40,9 +38,9 @@
 
     header a {
       color: white;
-      font-weight: 500;
       text-decoration: none;
-      margin: 0 10px;
+      font-weight: 500;
+      margin: 0 12px;
       transition: 0.3s;
     }
 
@@ -50,11 +48,9 @@
       color: var(--hijau-muda);
     }
 
-    /* HERO SECTION */
     .hero {
       background: url('assets/img/wilayah/wilayah1.png') center/cover no-repeat;
       position: relative;
-      text-align: center;
       color: white;
       padding: 140px 20px;
     }
@@ -63,7 +59,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 77, 38, 0.55);
+      background: rgba(0, 77, 38, 0.6);
     }
 
     .hero-content {
@@ -78,6 +74,7 @@
 
     .hero p {
       font-size: 1.1rem;
+      margin-top: 10px;
     }
 
     .blink {
@@ -90,56 +87,39 @@
       25%, 75% { opacity: 0; }
     }
 
-    /* CONTENT */
     .content-section {
       background: #fff;
       border-radius: 12px;
-      padding: 50px;
-      max-width: 950px;
-      margin: -60px auto 50px;
+      padding: 60px 35px;
+      max-width: 900px;
+      margin: -60px auto 60px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-      position: relative;
-      z-index: 10;
     }
 
-    .content-section h1, .content-section h3 {
+    .content-section h1, 
+    .content-section h3 {
       color: var(--hijau);
       font-weight: 700;
     }
 
     .content-section h1 {
-      text-align: center;
       margin-bottom: 40px;
-      position: relative;
-    }
-
-    .content-section h1::after {
-      content: "";
-      display: block;
-      width: 80px;
-      height: 3px;
-      background: var(--hijau-muda);
-      margin: 10px auto 0;
-      border-radius: 2px;
     }
 
     .content-section h3 {
       margin-top: 40px;
-      position: relative;
-      text-transform: capitalize;
-    }
-
-    .content-section h3::before {
-      content: "✦ ";
-      color: var(--hijau-muda);
     }
 
     .content-section p {
-      text-align: justify;
       font-size: 1.05rem;
+      line-height: 1.8;
+      margin: 10px 0;
     }
 
     .content-section ul {
+      display: inline-block;
+      text-align: left;
+      margin: 0 auto 20px;
       padding-left: 20px;
     }
 
@@ -148,10 +128,10 @@
       margin-bottom: 8px;
     }
 
-    /* BUTTONS */
     .btn-success {
       background-color: var(--hijau);
       border-color: var(--hijau);
+      transition: 0.3s;
     }
 
     .btn-success:hover {
@@ -159,7 +139,6 @@
       border-color: var(--hijau-muda);
     }
 
-    /* WHATSAPP BUTTON */
     .floating-whatsapp {
       position: fixed;
       bottom: 20px;
@@ -182,16 +161,14 @@
       background: #128C7E;
     }
 
-    /* FOOTER */
     footer {
       background-color: var(--hijau);
       color: white;
-      padding: 20px 10px;
-      text-align: center;
+      padding: 20px;
       font-size: 0.95rem;
     }
 
-    /* SCROLL ANIMATION */
+    /* Animasi Scroll */
     .fade {
       opacity: 0;
       transform: translateY(40px);
@@ -205,13 +182,12 @@
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 1.9rem; }
-      .content-section { padding: 30px; margin: -40px 15px 40px; }
+      .content-section { padding: 40px 20px; }
     }
   </style>
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <header>
     <div class="container d-flex justify-content-between align-items-center">
       <h3 class="fw-bold m-0">nikahsirrisah.com</h3>
@@ -225,7 +201,6 @@
     </div>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <h1>Jasa Nikah Siri Terlengkap di <span id="nama-kota"></span></h1>
@@ -233,111 +208,74 @@
     </div>
   </section>
 
-  <!-- KONTEN -->
   <div class="content-section">
     <h1 class="fade">Panduan Lengkap Nikah Siri di <span id="nama-kota2"></span></h1>
 
     <h3 class="fade">1. Apa Itu Nikah Siri?</h3>
     <p class="fade"><strong>Nikah siri</strong> adalah pernikahan yang dilakukan secara agama Islam tanpa pencatatan resmi di <strong>KUA (Kantor Urusan Agama)</strong>. Meskipun belum tercatat oleh negara, nikah siri tetap sah menurut syariat Islam selama memenuhi seluruh rukun dan syarat nikah.</p>
-    <p class="fade">Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh dua saksi laki-laki Muslim yang telah baligh dan berakal sehat. Berikut rukun dan syarat agar akad nikah sah menurut agama:</p>
+
+    <p class="fade">Biasanya, nikah siri dilakukan secara sederhana dengan dua saksi laki-laki Muslim yang adil. Berikut syarat-syaratnya:</p>
 
     <ul class="fade">
-      <li>Kedua mempelai beragama Islam dan tidak memiliki halangan menikah.</li>
-      <li>Adanya wali nikah — baik wali nasab maupun wali tahkim.</li>
-      <li>Hadirnya dua saksi laki-laki Muslim yang adil dan baligh.</li>
-      <li>Adanya mas kawin (mahar) dari mempelai pria.</li>
-      <li>Terucapnya ijab dan qabul dengan lafaz jelas dan dipahami kedua belah pihak.</li>
+      <li>Kedua mempelai beragama Islam.</li>
+      <li>Adanya wali nikah.</li>
+      <li>Dua saksi laki-laki Muslim.</li>
+      <li>Ada mas kawin (mahar).</li>
+      <li>Ijab dan qabul sah.</li>
     </ul>
 
-    <h3 class="fade">2. Cara Mendaftar Nikah Siri di <span id="nama-kota3"></span></h3>
-    <p class="fade">Pendaftaran nikah siri melalui layanan kami sangat mudah. Anda cukup mengirimkan dokumen melalui WhatsApp di <strong>0889-8077-6674</strong>:</p>
-
+    <h3 class="fade">2. Cara Mendaftar Nikah Siri</h3>
+    <p class="fade">Pendaftaran cukup mudah! Kirim data berikut via WhatsApp ke <strong>0889-8077-6674</strong>:</p>
     <ul class="fade">
-      <li>KTP atau SIM masing-masing calon mempelai</li>
-      <li>Nama ayah masing-masing calon mempelai</li>
-      <li>Jika calon mempelai wanita gadis, wajib membawa wali nasab</li>
-      <li>Jika calon mempelai wanita janda, wajib melampirkan akta cerai</li>
-      <li>Masing-masing mempelai membawa mas kawin</li>
-      <li>Pas foto ukuran 2x3 sebanyak 2 lembar per mempelai</li>
-      <li>Materai Rp10.000 sebanyak 4 buah</li>
+      <li>KTP/SIM masing-masing calon</li>
+      <li>Nama ayah masing-masing calon</li>
+      <li>Wali nikah (bagi gadis)</li>
+      <li>Akta cerai (bagi janda)</li>
+      <li>Mas kawin</li>
+      <li>Pas foto 2x3 (2 lembar)</li>
+      <li>Materai Rp10.000 (4 lembar)</li>
     </ul>
 
-    <p class="fade">Setelah dokumen lengkap, penghulu kami akan menjadwalkan tanggal dan waktu akad sesuai permintaan. Dengan persyaratan lengkap, proses nikah siri dapat berlangsung cepat, aman, dan sah secara agama.</p>
+    <p class="fade">Setelah lengkap, penghulu akan menentukan jadwal akad sesuai keinginan Anda.</p>
 
-    <h3 class="fade">3. Lokasi Akad Nikah Siri di <span id="nama-kota4"></span></h3>
-    <p class="fade">Kami melayani akad nikah langsung di tempat yang kami sediakan untuk kenyamanan dan privasi maksimal. Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah <span id="nama-kota4"></span> dan sekitarnya.</p>
+    <h3 class="fade">3. Lokasi Akad Nikah</h3>
+    <p class="fade">Akad dapat dilakukan di tempat kami, di rumah, hotel, atau masjid pilihan Anda.</p>
 
-    <p class="fade">Keunggulan layanan kami:</p>
-    <ul class="fade">
-      <li>Praktis dan nyaman: Kami siap datang ke lokasi pilihan Anda.</li>
-      <li>Privasi terjaga: Akad nikah dapat dilakukan secara tertutup sesuai keinginan pasangan.</li>
-      <li>Fleksibilitas penuh: Lokasi bisa disesuaikan dengan jumlah tamu dan kebutuhan pasangan.</li>
-      <li>Sah secara agama: Semua proses mengikuti syariat Islam dengan pengawasan penghulu resmi.</li>
-    </ul>
-
-    <p class="fade">Dengan layanan Nikah Siri <span id="nama-kota4"></span> dan sekitarnya, nikah siri bukan hanya sah secara agama, tapi juga lebih nyaman, cepat, dan aman.</p>
-
-    <h3 class="fade">4. Biaya Nikah Siri di <span id="nama-kota5"></span></h3>
-    <p class="fade">Biaya nikah siri bervariasi tergantung lokasi akad, jumlah saksi, dan fasilitas tambahan yang dipilih. Di <span id="nama-kota5"></span>, kami memastikan harga transparan, terjangkau, dan sesuai syariat Islam.</p>
-
-    <p class="fade">Faktor yang memengaruhi biaya antara lain:</p>
-    <ul class="fade">
-      <li>Lokasi akad: Rumah mempelai, hotel, atau masjid dapat memengaruhi biaya.</li>
-      <li>Fasilitas tambahan: Misalnya untuk mualaf dan penerbitan surat mualaf.</li>
-    </ul>
-
-    <p class="fade">Estimasi biaya nikah siri berkisar antara <strong>Rp2.000.000 – Rp3.000.000</strong>. Dengan layanan kami, nikah siri bukan hanya sah secara agama, tetapi juga hemat, praktis, dan aman.</p>
-
-    <p class="text-center fade">
-      Klik tombol di bawah ini untuk konsultasi biaya nikah siri di <span id="nama-kota5b"></span><br>
-      <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg mt-3" target="_blank">
-        💬 Hubungi via WhatsApp
-      </a>
-    </p>
-
-    <h3 class="fade">5. Sertifikat Nikah Siri</h3>
-    <p class="fade">Setelah akad nikah selesai, pasangan akan menerima sertifikat nikah siri resmi yang ditandatangani oleh penghulu, dua saksi, dan kedua mempelai. Sertifikat ini menjadi bukti sahnya pernikahan secara agama Islam dan dapat digunakan untuk berbagai keperluan administratif.</p>
-    <p class="fade">Beberapa manfaat sertifikat nikah siri antara lain:</p>
-    <ul class="fade">
-      <li>Dokumen pendukung untuk melanjutkan nikah resmi di KUA.</li>
-      <li>Mempermudah pembuatan kontrak rumah atau dokumen legal lain.</li>
-      <li>Memberikan kepastian hukum internal bagi pasangan menurut syariat Islam.</li>
-    </ul>
-
-    <h3 class="fade">6. Kelebihan Nikah Siri di <span id="nama-kota6"></span></h3>
-    <p class="fade">Nikah siri menjadi alternatif pernikahan sah secara agama dengan banyak kelebihan, khususnya bagi pasangan yang ingin menikah cepat, praktis, dan sesuai syariat Islam.</p>
     <ul class="fade">
       <li>Privasi terjaga</li>
-      <li>Proses akad sederhana</li>
-      <li>Fleksibilitas waktu dan lokasi</li>
-      <li>Menghindari birokrasi rumit</li>
-      <li>Dilayani penghulu profesional</li>
-      <li>Hemat biaya</li>
-      <li>Dokumentasi lengkap</li>
-      <li>Fleksibel untuk kondisi khusus</li>
-      <li>Mendukung pernikahan resmi di kemudian hari</li>
+      <li>Penghulu profesional</li>
+      <li>Waktu fleksibel</li>
+      <li>Sah secara agama</li>
     </ul>
-    <p class="fade">Dengan semua keunggulan tersebut, nikah siri di <span id="nama-kota6b"></span> menjadi solusi ideal bagi pasangan yang menginginkan pernikahan sah secara agama, aman, fleksibel, dan hemat biaya.</p>
 
-    <div class="text-center mt-5">
-      <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg shadow" target="_blank">💬 Konsultasi Sekarang</a>
-      <a href="index.html#wilayah" class="btn btn-outline-success btn-lg ms-2">← Kembali</a>
-    </div>
+    <h3 class="fade">4. Biaya Nikah Siri</h3>
+    <p class="fade">Biaya mulai dari <strong>Rp2.000.000 – Rp3.000.000</strong> tergantung lokasi dan fasilitas tambahan.</p>
+    <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg mt-3 fade" target="_blank">💬 Hubungi via WhatsApp</a>
+
+    <h3 class="fade">5. Sertifikat Nikah Siri</h3>
+    <p class="fade">Setelah akad selesai, pasangan akan menerima sertifikat nikah siri sah secara agama, ditandatangani oleh penghulu dan saksi.</p>
+
+    <h3 class="fade">6. Kelebihan Layanan Kami</h3>
+    <ul class="fade">
+      <li>Privasi terjaga</li>
+      <li>Penghulu resmi & profesional</li>
+      <li>Proses cepat & mudah</li>
+      <li>Harga terjangkau</li>
+    </ul>
+
+    <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg mt-4 fade" target="_blank">💬 Konsultasi Sekarang</a>
   </div>
 
-  <!-- TOMBOL WHATSAPP -->
   <a href="https://wa.me/6288980776674" class="floating-whatsapp" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="35">
   </a>
 
-  <!-- FOOTER -->
   <footer>
     © 2025 nikahsirrisah.com — Layanan Nikah Sah Secara Agama
   </footer>
 
-  <!-- SCRIPT -->
   <script>
-    // Animasi Scroll
+    // Animasi scroll
     const faders = document.querySelectorAll('.fade');
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -349,12 +287,10 @@
     }, { threshold: 0.1 });
     faders.forEach(fader => observer.observe(fader));
 
-    // Nama Kota Dinamis
+    // Nama kota dinamis
     const params = new URLSearchParams(window.location.search);
     const nama = params.get("nama");
-    const kota = nama && nama.trim() !== ""
-      ? nama.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase())
-      : "Wilayah Anda";
+    const kota = nama ? nama.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) : "Wilayah Anda";
     document.querySelectorAll("[id^='nama-kota']").forEach(el => el.textContent = kota);
   </script>
 </body>
