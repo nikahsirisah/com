@@ -56,13 +56,13 @@
     .hero-content {
       position: relative;
       z-index: 1;
-      text-align: center;
     }
 
     .hero h1 {
       font-size: 2.8rem;
       font-weight: 700;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      position: relative;
       display: inline-block;
     }
 
@@ -104,6 +104,7 @@
       color: #004d26;
       font-weight: 700;
       margin: 40px 0 20px;
+      position: relative;
       display: inline-block;
     }
 
@@ -282,4 +283,15 @@
     const fadeSections = document.querySelectorAll('.fade-section');
     const appearOptions = { threshold: 0.2 };
 
-    const appearOnScroll = new IntersectionObserver(function(entries,
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    fadeSections.forEach(section => appearOnScroll.observe(section));
+  </script>
+</body>
+</html>
