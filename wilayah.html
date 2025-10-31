@@ -288,4 +288,39 @@
       ? nama.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) 
       : "Wilayah Anda";
     document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
-    document.querySelectorAll("[id^='nama-kota']").forEach(el =>
+    document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
+
+    // Parallax hero text
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero-content');
+      if (hero) {
+        hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
+      }
+    });
+
+    // Fade-in on scroll with staggered children
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const appearOptions = { threshold: 0.2 };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+
+        const section = entry.target;
+        section.classList.add('show');
+
+        // Stagger children
+        const children = Array.from(section.children);
+        children.forEach((child, index) => {
+          child.style.transitionDelay = `${index * 0.15}s`;
+        });
+
+        observer.unobserve(section);
+      });
+    }, appearOptions);
+
+    fadeSections.forEach(section => appearOnScroll.observe(section));
+  </script>
+
+</body>
+</html>
