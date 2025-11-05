@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title id="page-title">Jasa Nikah Siri Terlengkap di Bandung</title>
+  <title>Jasa Nikah Siri Terlengkap di Bandung</title>
 
   <!-- SEO -->
-  <meta name="description" content="nikahsirrisah.com melayani jasa nikah siri sah secara agama di seluruh Indonesia dengan penghulu profesional dan sertifikat resmi.">
-  <meta property="og:title" content="Jasa Nikah Siri Terlengkap di Indonesia">
-  <meta property="og:description" content="Layanan akad nikah sah secara agama oleh nikahsirrisah.com di seluruh wilayah Indonesia.">
+  <meta name="description" content="nikahsirrisah.com melayani jasa nikah siri sah secara agama di Bandung dengan penghulu profesional dan sertifikat resmi.">
+  <meta property="og:title" content="Jasa Nikah Siri Terlengkap di Bandung">
+  <meta property="og:description" content="Layanan akad nikah sah secara agama oleh nikahsirrisah.com di Bandung.">
   <meta property="og:image" content="assets/img/wilayah/wilayah1.png">
 
   <!-- Bootstrap -->
@@ -17,12 +17,11 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
+  <!-- Style -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
       background-color: #f9f9f9;
-      background-image: radial-gradient(circle at 1px 1px, #cde9e0 1px, transparent 0);
-      background-size: 40px 40px;
     }
 
     header {
@@ -38,55 +37,35 @@
     }
 
     .hero {
-      position: relative;
-      background: url('assets/img/wilayah/wilayah1.png') center/cover no-repeat fixed;
+      background: url('assets/img/wilayah/wilayah1.png') center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 120px 20px;
     }
 
-    .hero::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 77, 38, 0.4);
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      transition: transform 0.3s ease-out;
-    }
-
     .hero h1 {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       font-weight: 700;
       text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-      position: relative;
-      display: inline-block;
     }
 
-    .hero h1::before, .hero h1::after {
-      content: "❖";
+    .hero p .blink {
       color: #25D366;
-      font-size: 1.8rem;
-      margin: 0 15px;
-      vertical-align: middle;
+      animation: blink 1s infinite;
     }
 
-    .hero p { font-size: 1.1rem; opacity: 0.95; }
-
-    .blink { color: #25D366; animation: blink 1s infinite; }
-    @keyframes blink { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0; } }
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
 
     .content-section {
       background: white;
       border-radius: 15px;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      padding: 40px 50px;
-      margin-top: -60px;
-      position: relative;
-      z-index: 2;
+      padding: 40px 30px;
+      margin: -60px auto 40px auto;
+      max-width: 900px;
       text-align: center;
     }
 
@@ -94,36 +73,22 @@
       color: #004d26;
       font-weight: 700;
       margin: 40px 0 20px;
-      position: relative;
-      display: inline-block;
     }
 
-    .content-section h3::before, .content-section h3::after {
-      content: "✦";
-      color: #25D366;
-      font-size: 1.2rem;
-      margin: 0 8px;
+    ul { list-style: none; padding: 0; text-align: left; }
+    ul li::before { content: "✔️ "; color: #25D366; }
+
+    .btn-success {
+      background-color: #004d26;
+      border-color: #004d26;
     }
-
-    .content-section p, .content-section ul, .content-section li { text-align: center; }
-
-    .btn-success { background-color: #004d26; border-color: #004d26; }
 
     footer {
       background-color: #004d26;
       color: white;
       padding: 20px 0;
       text-align: center;
-      margin-top: 50px;
     }
-
-    ul { list-style: none; padding: 0; }
-    ul li::before { content: "✔️ "; color: #25D366; }
-
-    .fade-section { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
-    .fade-section.show { opacity: 1; transform: translateY(0); }
-    .fade-section > * { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
-    .fade-section.show > * { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 <body>
@@ -141,21 +106,19 @@
     </div>
   </header>
 
-  <section class="hero fade-section">
-    <div class="hero-content">
-      <h1 id="judul">Jasa Nikah Siri Terlengkap di Bandung</h1>
+  <section class="hero">
+    <div>
+      <h1>Jasa Nikah Siri Terlengkap di Bandung</h1>
       <p>Hubungi kami di <b class="blink">0889-8077-6674</b> untuk layanan akad nikah sah secara agama.</p>
     </div>
   </section>
 
-  <div class="container content-section fade-section">
+  <div class="container content-section">
 
     <h1>Panduan Lengkap Nikah Siri di Bandung</h1>
 
     <h3>1. Apa Itu Nikah Siri?</h3>
-    <p><strong>Nikah siri</strong> adalah pernikahan yang dilakukan secara agama Islam tanpa pencatatan resmi di KUA. Meskipun belum tercatat oleh negara, nikah siri tetap sah menurut syariat Islam selama memenuhi seluruh rukun dan syarat nikah.</p>
-
-    <p>Biasanya, nikah siri diselenggarakan secara sederhana dan dihadiri oleh dua saksi laki-laki Muslim yang telah baligh dan berakal sehat. Berikut rukun dan syarat agar akad nikah sah menurut agama:</p>
+    <p>Nikah siri adalah pernikahan yang dilakukan secara agama Islam tanpa pencatatan resmi di KUA. Meskipun belum tercatat oleh negara, nikah siri tetap sah menurut syariat Islam selama memenuhi seluruh rukun dan syarat nikah.</p>
 
     <ul>
       <li>Kedua mempelai beragama Islam dan tidak memiliki halangan menikah.</li>
@@ -166,28 +129,38 @@
     </ul>
 
     <h3>2. Cara Mendaftar Nikah Siri di Bandung</h3>
-    <p>Pendaftaran nikah siri melalui layanan kami sangat mudah. Anda cukup mengirimkan dokumen melalui WhatsApp di 0889-8077-6674:</p>
-
+    <p>Cukup kirim dokumen melalui WhatsApp ke 0889-8077-6674:</p>
     <ul>
-      <li>KTP atau SIM masing-masing calon mempelai</li>
-      <li>Nama ayah masing-masing calon mempelai</li>
-      <li>Jika calon mempelai wanita gadis, wajib membawa wali nasab</li>
-      <li>Jika calon mempelai wanita janda, wajib melampirkan akta cerai</li>
-      <li>Masing-masing mempelai membawa mas kawin</li>
-      <li>Pas foto ukuran 2x3 sebanyak 2 lembar per mempelai</li>
-      <li>Materai Rp10.000 sebanyak 4 buah</li>
+      <li>KTP/SIM calon mempelai</li>
+      <li>Nama ayah calon mempelai</li>
+      <li>Wali nasab untuk calon mempelai wanita gadis</li>
+      <li>Akta cerai untuk calon mempelai wanita janda</li>
+      <li>Mas kawin</li>
+      <li>Pas foto 2x3 (2 lembar per mempelai)</li>
+      <li>Materai Rp10.000 (4 buah)</li>
     </ul>
 
-    <p>Setelah dokumen lengkap, penghulu kami akan menjadwalkan tanggal dan waktu akad sesuai permintaan. Dengan persyaratan lengkap, proses nikah siri dapat berlangsung cepat, aman, dan sah secara agama.</p>
-
     <h3>3. Lokasi Akad Nikah Siri di Bandung</h3>
-    <p>Kami melayani akad nikah langsung di tempat yang kami sediakan untuk kenyamanan dan privasi maksimal. Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah Bandung dan sekitarnya.</p>
+    <p>Akad dapat dilakukan di rumah mempelai, hotel, atau masjid di Bandung. Layanan kami fleksibel dan menjaga privasi pasangan.</p>
 
-    <div class="text-center mt-5">
-      <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg shadow" target="_blank">
-        💬 Konsultasi Sekarang
-      </a>
-      <a href="index.html#wilayah" class="btn btn-outline-success btn-lg ms-2">← Kembali</a>
+    <h3>4. Biaya Nikah Siri di Bandung</h3>
+    <p>Estimasi biaya Rp2.000.000 – Rp3.000.000, tergantung lokasi dan fasilitas tambahan. Semua transparan dan sesuai syariat Islam.</p>
+
+    <h3>5. Sertifikat Nikah Siri</h3>
+    <p>Setelah akad, pasangan menerima sertifikat nikah siri resmi yang sah secara agama.</p>
+
+    <h3>6. Kelebihan Nikah Siri di Bandung</h3>
+    <ul>
+      <li>Privasi terjaga</li>
+      <li>Proses sederhana</li>
+      <li>Fleksibilitas waktu dan lokasi</li>
+      <li>Dilayani penghulu profesional</li>
+      <li>Hemat biaya</li>
+      <li>Dokumentasi lengkap</li>
+    </ul>
+
+    <div class="text-center mt-4">
+      <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg" target="_blank">💬 Konsultasi Sekarang</a>
     </div>
 
   </div>
@@ -196,23 +169,5 @@
     <p class="mb-0">© 2025 nikahsirrisah.com — Layanan Nikah Sah Secara Agama</p>
   </footer>
 
-  <script>
-    // Tidak ada nama kota dinamis; default Bandung
-    document.title = "Jasa Nikah Siri Terlengkap di Bandung";
-
-    // Parallax hero text
-    window.addEventListener('scroll', () => {
-      const hero = document.querySelector('.hero-content');
-      if (hero) hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-    });
-
-    // Fade-in on scroll
-    const fadeSections = document.querySelectorAll('.fade-section');
-    const appearOptions = { threshold: 0.2 };
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const section = entry.target;
-        section.classList.add('show');
-        const children = Array.from(section.children);
-        children.forEach((child, index) => child.style.transitionDelay = `${index * 0.15}s
+</body>
+</html>
