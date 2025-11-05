@@ -17,7 +17,6 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-  <!-- Style -->
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -38,7 +37,6 @@
       font-weight: 500;
     }
 
-    /* Hero Parallax & Fade */
     .hero {
       position: relative;
       background: url('assets/img/wilayah/wilayah1.png') center/cover no-repeat fixed;
@@ -76,20 +74,10 @@
       vertical-align: middle;
     }
 
-    .hero p {
-      font-size: 1.1rem;
-      opacity: 0.95;
-    }
+    .hero p { font-size: 1.1rem; opacity: 0.95; }
 
-    .blink {
-      color: #25D366;
-      animation: blink 1s infinite;
-    }
-
-    @keyframes blink {
-      0%, 50%, 100% { opacity: 1; }
-      25%, 75% { opacity: 0; }
-    }
+    .blink { color: #25D366; animation: blink 1s infinite; }
+    @keyframes blink { 0%, 50%, 100% { opacity: 1; } 25%, 75% { opacity: 0; } }
 
     .content-section {
       background: white;
@@ -117,16 +105,9 @@
       margin: 0 8px;
     }
 
-    .content-section p, 
-    .content-section ul, 
-    .content-section li {
-      text-align: center;
-    }
+    .content-section p, .content-section ul, .content-section li { text-align: center; }
 
-    .btn-success {
-      background-color: #004d26;
-      border-color: #004d26;
-    }
+    .btn-success { background-color: #004d26; border-color: #004d26; }
 
     footer {
       background-color: #004d26;
@@ -139,28 +120,10 @@
     ul { list-style: none; padding: 0; }
     ul li::before { content: "✔️ "; color: #25D366; }
 
-    /* Fade-in animation */
-    .fade-section {
-      opacity: 0;
-      transform: translateY(40px);
-      transition: all 0.8s ease-out;
-    }
-
-    .fade-section.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Staggered fade for children */
-    .fade-section > * {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease-out;
-    }
-    .fade-section.show > * {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    .fade-section { opacity: 0; transform: translateY(40px); transition: all 0.8s ease-out; }
+    .fade-section.show { opacity: 1; transform: translateY(0); }
+    .fade-section > * { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
+    .fade-section.show > * { opacity: 1; transform: translateY(0); }
   </style>
 </head>
 <body>
@@ -180,14 +143,14 @@
 
   <section class="hero fade-section">
     <div class="hero-content">
-      <h1 id="judul">Jasa Nikah Siri Terlengkap di Bandung<span id="nama-kota"></span></h1>
+      <h1 id="judul">Jasa Nikah Siri Terlengkap di Bandung</h1>
       <p>Hubungi kami di <b class="blink">0889-8077-6674</b> untuk layanan akad nikah sah secara agama.</p>
     </div>
   </section>
 
   <div class="container content-section fade-section">
 
-    <h1>Panduan Lengkap Nikah Siri di <span id="nama-kota"></span></h1>
+    <h1>Panduan Lengkap Nikah Siri di Bandung</h1>
 
     <h3>1. Apa Itu Nikah Siri?</h3>
     <p><strong>Nikah siri</strong> adalah pernikahan yang dilakukan secara agama Islam tanpa pencatatan resmi di KUA. Meskipun belum tercatat oleh negara, nikah siri tetap sah menurut syariat Islam selama memenuhi seluruh rukun dan syarat nikah.</p>
@@ -202,7 +165,7 @@
       <li>Terucapnya ijab dan qabul dengan lafaz jelas dan dipahami kedua belah pihak.</li>
     </ul>
 
-    <h3>2. Cara Mendaftar Nikah Siri di <span id="nama-kota"></span></h3>
+    <h3>2. Cara Mendaftar Nikah Siri di Bandung</h3>
     <p>Pendaftaran nikah siri melalui layanan kami sangat mudah. Anda cukup mengirimkan dokumen melalui WhatsApp di 0889-8077-6674:</p>
 
     <ul>
@@ -217,55 +180,8 @@
 
     <p>Setelah dokumen lengkap, penghulu kami akan menjadwalkan tanggal dan waktu akad sesuai permintaan. Dengan persyaratan lengkap, proses nikah siri dapat berlangsung cepat, aman, dan sah secara agama.</p>
 
-    <h3>3. Lokasi Akad Nikah Siri di <span id="nama-kota"></span></h3>
-    <p>Kami melayani akad nikah langsung di tempat yang kami sediakan untuk kenyamanan dan privasi maksimal. Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah <span id="nama-kota"></span> dan sekitarnya.</p>
-
-    <p>Keunggulan layanan kami:</p>
-    <ul>
-      <li>Praktis dan nyaman: Kami siap datang ke lokasi pilihan Anda.</li>
-      <li>Privasi terjaga: Akad nikah dapat dilakukan secara tertutup sesuai keinginan pasangan.</li>
-      <li>Fleksibilitas penuh: Lokasi bisa disesuaikan dengan jumlah tamu dan kebutuhan pasangan.</li>
-      <li>Sah secara agama: Semua proses mengikuti syariat Islam dengan pengawasan penghulu resmi.</li>
-    </ul>
-
-    <h3>4. Biaya Nikah Siri di <span id="nama-kota"></span></h3>
-    <p>Biaya nikah siri bervariasi tergantung lokasi akad, jumlah saksi, dan fasilitas tambahan yang dipilih. Di <span id="nama-kota"></span>, kami memastikan harga transparan, terjangkau, dan sesuai syariat Islam.</p>
-
-    <p>Faktor yang memengaruhi biaya antara lain:</p>
-    <ul>
-      <li>Lokasi akad: Rumah mempelai, hotel, atau masjid dapat memengaruhi biaya.</li>
-      <li>Fasilitas tambahan: Misalnya untuk mualaf dan penerbitan surat mualaf.</li>
-    </ul>
-
-    <p>Kami memberikan estimasi biaya jelas antara <strong>Rp2.000.000 – Rp3.000.000</strong>. Dengan layanan kami, nikah siri bukan hanya sah secara agama, tetapi juga hemat, praktis, dan aman.</p>
-
-    <p>Klik tombol di bawah ini:<br>
-      <a href="https://wa.me/6288980776674" target="_blank" class="btn btn-success mt-3">💬 Chat via WhatsApp</a>
-    </p>
-
-    <h3>5. Sertifikat Nikah Siri</h3>
-    <p>Setelah akad nikah selesai, pasangan akan menerima sertifikat nikah siri resmi yang ditandatangani oleh penghulu, dua saksi, dan kedua mempelai. Sertifikat ini menjadi bukti sahnya pernikahan secara agama Islam dan dapat digunakan untuk berbagai keperluan administratif.</p>
-
-    <ul>
-      <li>Digunakan sebagai dokumen pendukung untuk melanjutkan nikah resmi di KUA atau negara.</li>
-      <li>Mempermudah pembuatan kontrak rumah, kos, atau dokumen legal lainnya yang memerlukan bukti status pernikahan.</li>
-      <li>Memberikan kepastian hukum internal bagi pasangan mengenai hak dan kewajiban masing-masing suami-istri menurut syariat Islam.</li>
-    </ul>
-
-    <h3>6. Kelebihan Nikah Siri di <span id="nama-kota"></span></h3>
-    <p>Nikah siri menjadi alternatif pernikahan yang sah secara agama dengan banyak kelebihan:</p>
-
-    <ul>
-      <li>Privasi Terjaga</li>
-      <li>Proses Akad Sederhana</li>
-      <li>Fleksibilitas Waktu dan Lokasi</li>
-      <li>Menghindari Birokrasi Rumit</li>
-      <li>Dilayani Penghulu Profesional</li>
-      <li>Hemat Biaya</li>
-      <li>Dokumentasi Lengkap</li>
-      <li>Fleksibel untuk Kondisi Khusus</li>
-      <li>Mendukung Perencanaan Pernikahan Lanjut</li>
-    </ul>
+    <h3>3. Lokasi Akad Nikah Siri di Bandung</h3>
+    <p>Kami melayani akad nikah langsung di tempat yang kami sediakan untuk kenyamanan dan privasi maksimal. Selain itu, akad juga bisa diadakan di rumah mempelai, hotel, atau masjid di wilayah Bandung dan sekitarnya.</p>
 
     <div class="text-center mt-5">
       <a href="https://wa.me/6288980776674" class="btn btn-success btn-lg shadow" target="_blank">
@@ -281,46 +197,22 @@
   </footer>
 
   <script>
-    // Nama kota dinamis
-    const params = new URLSearchParams(window.location.search);
-    const nama = params.get("nama");
-    const kota = nama && nama.trim() !== "" 
-      ? nama.replace(/-/g, " ").replace(/\b\w/g, l => l.toUpperCase()) 
-      : "Wilayah Anda";
-    document.title = `Jasa Nikah Siri Terlengkap di ${kota}`;
-    document.querySelectorAll("[id^='nama-kota']").forEach(el => el.innerText = kota);
+    // Tidak ada nama kota dinamis; default Bandung
+    document.title = "Jasa Nikah Siri Terlengkap di Bandung";
 
     // Parallax hero text
     window.addEventListener('scroll', () => {
       const hero = document.querySelector('.hero-content');
-      if (hero) {
-        hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
-      }
+      if (hero) hero.style.transform = `translateY(${window.scrollY * 0.3}px)`;
     });
 
-    // Fade-in on scroll with staggered children
+    // Fade-in on scroll
     const fadeSections = document.querySelectorAll('.fade-section');
     const appearOptions = { threshold: 0.2 };
-
     const appearOnScroll = new IntersectionObserver(function(entries, observer) {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;
-
         const section = entry.target;
         section.classList.add('show');
-
-        // Stagger children
         const children = Array.from(section.children);
-        children.forEach((child, index) => {
-          child.style.transitionDelay = `${index * 0.15}s`;
-        });
-
-        observer.unobserve(section);
-      });
-    }, appearOptions);
-
-    fadeSections.forEach(section => appearOnScroll.observe(section));
-  </script>
-
-</body>
-</html>
+        children.forEach((child, index) => child.style.transitionDelay = `${index * 0.15}s
