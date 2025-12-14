@@ -1,121 +1,97 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Jasa Nikah Siri Bali Terlengkap & Bayar Setelah Akad</title>
 
-<!-- ✅ SEO META -->
-<meta name="description" content="nikahsirrisah.com melayani jasa nikah siri sah secara agama di Bali dengan penghulu profesional dan sertifikat resmi.">
-<meta name="keywords" content="nikah siri Bali, jasa nikah siri, penghulu nikah siri, biaya nikah siri, sertifikat nikah siri, akad nikah sah">
+<!-- SEO -->
+<meta name="description" content="Jasa Nikah Siri Bali sah secara agama. Penghulu berpengalaman, proses cepat, privasi terjaga, bayar setelah akad.">
 <link rel="canonical" href="https://nikahsirrisah.com/">
 <meta property="og:title" content="Jasa Nikah Siri Bali Terlengkap & Bayar Setelah Akad">
-<meta property="og:description" content="Layanan akad nikah sah secara agama oleh nikahsirrisah.com di Bali.">
+<meta property="og:description" content="Layanan nikah siri sah secara agama Islam di Bali dengan penghulu terpercaya.">
 <meta property="og:image" content="assets/img/wilayah/wilayah1.png">
 <meta property="og:type" content="website">
-<meta property="og:locale" content="id_ID">
 
-<!-- ✅ Bootstrap -->
-<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- ✅ Google Fonts -->
+<!-- Preload Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
-<!-- ✅ Style -->
+<!-- Bootstrap Async -->
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" as="style">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+
+<!-- Critical CSS -->
 <style>
-body {
-font-family: 'Poppins', sans-serif;
-background: #f9f9f9 radial-gradient(circle at 1px 1px, #cde9e0 1px, transparent 0);
-background-size: 40px 40px;
-margin: 0;
+body{
+font-family:Poppins,sans-serif;
+margin:0;
+background:#f9f9f9;
 }
-
-header, footer {
-background-color: #004d26;
-color: #fff;
-text-align: center;
-box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+header,footer{
+background:#004d26;
+color:#fff;
 }
-
-header { padding: 15px 0; }
-header a { color: #fff; text-decoration: none; font-weight: 500; margin: 0 8px; }
-
-.hero {
-background: url('assets/img/wilayah/wilayah1.png') center/cover no-repeat fixed;
-color: #fff;
-text-align: center;
-padding: 120px 20px;
-position: relative;
+header a{color:#fff;text-decoration:none;margin:0 8px}
+.hero{
+background:url("assets/img/wilayah/wilayah1.png") center/cover no-repeat;
+padding:100px 15px;
+position:relative;
+text-align:center;
+color:#fff;
 }
-.hero::before {
-content: "";
-position: absolute; inset: 0;
-background: rgba(0, 77, 38, 0.4);
+.hero::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,77,38,.45);
 }
-.hero-content {
-position: relative; z-index: 1;
+.hero>*{position:relative}
+main{
+max-width:900px;
+margin:-50px auto 0;
+background:#fff;
+padding:35px 25px;
+border-radius:14px;
+box-shadow:0 4px 12px rgba(0,0,0,.08)
 }
-.hero h1 {
-font-size: 2.6rem; font-weight: 700;
-text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+h2,h3,h4{
+text-align:center;
+color:#004d26;
+font-weight:600;
+margin:30px 0 15px
 }
-.hero h1::before, .hero h1::after {
-content: "❖"; color: #25D366; font-size: 1.5rem; margin: 0 10px;
-}
-
-.blink { color: #25D366; animation: blink 1s infinite; }
-@keyframes blink { 0%, 50%, 100%{opacity:1;} 25%,75%{opacity:0;} }
-
-main {
-background: #fff;
-border-radius: 15px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-padding: 40px 30px;
-margin: -60px auto 0;
-max-width: 900px;
-}
-
-/* ✅ Rata tengah untuk H2 dan H3 */
-h2, h3 {
-color: #004d26;
-font-weight: 700;
-margin: 30px 0 15px;
-text-align: center;
-}
-h3::before, h3::after { content: "✦"; color: #25D366; font-size: 1.1rem; margin: 0 6px; }
-
-ul { list-style: none; padding: 0; }
-ul li::before { content: "✔️ "; color: #25D366; }
-
-.btn-success { background-color: #004d26; border-color: #004d26; }
-.fade-section { opacity: 0; transform: translateY(30px); transition: all 0.7s ease-out; }
-.fade-section.show { opacity: 1; transform: none; }
-
-footer { padding: 20px 10px; font-size: 0.9rem; }
+p{line-height:1.8}
+ul{padding-left:0;list-style:none}
+ul li::before{content:"✔ ";color:#25D366}
+.btn-success{background:#004d26;border:0}
+.fade{opacity:0;transform:translateY(25px);transition:.6s}
+.fade.show{opacity:1;transform:none}
 </style>
+
 </head>
 <body>
 
-<header>
+<header class="py-3">
 <div class="container d-flex justify-content-between align-items-center flex-wrap">
-<h3 class="fw-bold m-0">nikahsirrisah.com</h3>
+<strong>nikahsirrisah.com</strong>
 <nav>
-<a href="index.html">Beranda</a>
-<a href="prosedur.html">Prosedur</a>
-<a href="kontak.html">Kontak</a>
+<a href="/">Beranda</a>
+<a href="/prosedur">Prosedur</a>
+<a href="/kontak">Kontak</a>
 </nav>
 </div>
 </header>
 
-<section class="hero fade-section">
-<div class="hero-content">
-<h1>Jasa Nikah Siri Bali Terlengkap & Bayar Setelah Akad</h1>
-<p>Hubungi kami di <b class="blink">0889-8077-6674</b> untuk layanan akad nikah sah secara agama.</p>
-</div>
+<section class="hero fade">
+<h1>Jasa Nikah Siri Bali Terlengkap<br>Bayar Setelah Akad</h1>
+<p>Hubungi <strong>0889-8077-6674</strong> untuk akad nikah sah secara agama</p>
 </section>
+
+<main class="fade">
 
 <main class="fade-section" id="content">
 <article>
@@ -437,52 +413,34 @@ Tidak harus. Yang terpenting sah secara agama.</p>
 <p><strong>Apakah nikah siri bisa dilanjutkan ke nikah resmi?</strong><br>
 Bisa, melalui isbat nikah atau pencatatan ulang.</p>
    
-<div class="text-center mt-5">
-<a href="https://wa.me/6288980776674?text=Assalamualaikum%20Wr.%20Wb%20Ustaz,%20mohon%20info%20nikah%20siri%20di%20Bali" class="btn btn-success btn-lg shadow" target="_blank">💬 Konsultasi Sekarang</a>
-<a href="index.html#wilayah" class="btn btn-outline-success btn-lg ms-2">← Kembali</a>
+<div class="text-center mt-4">
+<a href="https://wa.me/6288980776674" class="btn btn-success btn-lg">💬 Konsultasi WhatsApp</a>
 </div>
+
 </article>
 </main>
 
-<footer>
-<p class="mb-0">© 2025 nikahsirrisah.com — Layanan Nikah Sah Secara Agama</p>
+<footer class="text-center py-3 mt-5">
+© 2025 nikahsirrisah.com
 </footer>
 
-<script>
-const fadeEls = document.querySelectorAll('.fade-section');
-const onScroll = () => {
-fadeEls.forEach(el => {
-if (el.getBoundingClientRect().top < window.innerHeight - 100) el.classList.add('show');
+<!-- JS DEFER -->
+<script defer>
+document.querySelectorAll('.fade').forEach(el=>{
+if(el.getBoundingClientRect().top < innerHeight) el.classList.add('show');
 });
-};
-window.addEventListener('scroll', onScroll);
-onScroll();
+window.addEventListener('scroll',()=> {
+document.querySelectorAll('.fade').forEach(el=>{
+if(el.getBoundingClientRect().top < innerHeight-80) el.classList.add('show');
+});
+});
 </script>
-<!-- FLOATING WHATSAPP -->
-<a href="https://wa.me/6288980776674?text=Assalamualaikum%20Wr.%20Wb%20Ustaz,%20saya%20ingin%20konsultasi%20nikah%20siri%20di%20Bali"
-   style="
-   position:fixed;
-   bottom:20px;
-   right:20px;
-   background:#25D366;
-   color:#fff;
-   padding:14px 22px;
-   border-radius:50px;
-   font-weight:600;
-   text-decoration:none;
-   box-shadow:0 8px 25px rgba(0,0,0,.35);
-   z-index:9999;
-   animation:pulse 1.5s infinite;">
-💬 WhatsApp Kami
-</a>
 
-<style>
-@keyframes pulse {
-  0% { box-shadow:0 0 0 0 rgba(37,211,102,.6); }
-  70% { box-shadow:0 0 0 15px rgba(37,211,102,0); }
-  100% { box-shadow:0 0 0 0 rgba(37,211,102,0); }
-}
-</style>
+<!-- Floating WA -->
+<a href="https://wa.me/6288980776674"
+style="position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;
+padding:12px 20px;border-radius:40px;font-weight:600;text-decoration:none;
+box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:999">💬 WhatsApp</a>
 
 </body>
 </html>
